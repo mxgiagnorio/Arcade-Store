@@ -1,0 +1,374 @@
+body{
+	background-color: $primario;
+	font-family: $fuente;
+	font-weight: $fuente-regular;
+}
+
+a{ 
+	text-decoration: none;
+	color:$enlace;
+	font-weight: $fuente-bold;
+}
+
+h1{
+	font-size: 1em;
+	color:$texto;
+	font-weight:$fuente-light-bold;
+}
+
+h3{
+	font-weight: $fuente-bold;
+	color:$texto;
+}
+
+@mixin mibanner($fondo){
+	@if $fondo == juegos{
+		background-image:url(../media/dragonage.jpg);
+	}@else if $fondo == productos{
+		background-image:url(../media/pacman.jpg);
+	}@else if $fondo == reseñas{
+		background-image:url(../media/oldies.jpg);		
+	}@else if $fondo == index{
+		background-image:url(../media/fondo.jpg);
+	}@else{
+		background-image:none;
+		background:$gradiente;
+	}
+}
+
+.index-banner{
+    height:101vh; 
+    background-repeat:no-repeat; 
+    background-size:cover;
+    background-position:center center; 
+    @include mibanner (index);  
+}
+
+
+.juegos-banner{
+	height:101vh; 
+    background-repeat:no-repeat; 
+    background-size:cover;
+    background-position:center center;
+    @include mibanner(juegos); 
+}
+
+.prod-banner{
+	height:101vh; 
+    background-repeat:no-repeat; 
+    background-size:cover;
+    background-position:center center;
+    @include mibanner(productos); 
+}
+
+.blog-banner{
+	height:101vh; 
+    background-repeat:no-repeat; 
+    background-size:cover;
+    background-position:center center;
+    @include mibanner(reseñas); 
+}
+
+
+
+/*
+.banner{	
+		background-image: url(../media/fondo.jpg);
+        height:101vh; 
+        background-repeat:no-repeat; 
+        background-size:cover;
+        background-position:center center; 
+}
+*/
+@media all and (max-width: 768px){
+	.index-banner{	
+		background-image: url(../media/fondo.jpg);
+        height:20vh; 
+        background-repeat:no-repeat; 
+        background-size:cover;
+        background-position:center center; 
+}
+	
+}
+@media all and (max-width: 768px){
+	.juegos-banner{	
+		background-image: url(../media/dragonage.jpg);
+        height:20vh; 
+        background-repeat:no-repeat; 
+        background-size:cover;
+        background-position:center center; 
+}
+	
+}
+@media all and (max-width: 768px){
+	.prod-banner{	
+		background-image: url(../media/pacman.jpg);
+        height:20vh; 
+        background-repeat:no-repeat; 
+        background-size:cover;
+        background-position:center center; 
+}
+	
+}
+@media all and (max-width: 768px){
+	.blog-banner{	
+		background-image: url(../media/oldies.jpg);
+        height:20vh; 
+        background-repeat:no-repeat; 
+        background-size:cover;
+        background-position:center center; 
+}
+	
+}
+
+//////////////////////////////---MENU----//////////////////////////////////
+
+.container-fluid{
+	nav{
+		background:$gradiente;
+		font-weight: $fuente-bold;				
+	}	
+		.navbar-light .navbar-nav .nav-link{
+ 		 color:$texto-white;
+  		}
+  			.navbar .nav-item{
+  			padding-left: 15px;
+  			}
+  			  .navbar-light .navbar-toggler{
+  			   background-color:$primario;
+  			   } 
+  				 	a{
+  				   	margin:0px 15px 0px 15px;
+  				   	padding:0px 10px 0px 10px;
+  				 	}
+}
+
+//////////////////////---------------------------------//////////////////////
+/*
+#videohome{
+  min-height: 60vh;
+  display: flex; 
+  flex-direction: column; 
+  justify-content:center;
+  align-items: center; 
+  margin-top: 1em;
+  				p{
+  				  text-align: center;
+ 			    } 
+}
+*/
+
+.row{
+	p{
+	text-align: center;
+	font-weight:$fuente-regular;
+	}
+	}a{text-decoration:none;
+		color:$fuente-bold;		
+	}
+
+.btn-primary{
+	background-color:$fondo;
+	border-color: $bordes; 
+	color:$texto-white;
+	&:hover{
+		background-color:$fondo-dark;
+	} 
+	}
+
+
+#nosotros{
+  	min-height: 40vh;
+  	margin:1rem; 
+  	background-color: $secundario;
+  	border: 3px solid; 
+  		h2{
+  			text-align: center;
+  			color:$texto;
+  			font-weight:$fuente-bold;
+  		}
+  			p{ 
+  			   text-align: center;
+  			   font-weight:$fuente-regular; 
+  			   word-spacing:2.0;
+  			   line-height: 2;   			  		   
+  		    }  span{
+  		    	font-weight:$fuente-light-bold;
+  			    color:$texto;
+  			   }
+}
+
+@mixin about($size,$weight,$color){
+	font-size: $size;
+	font-weight: $weight;
+	color:$color;	
+}
+#nosotros{
+	min-height: 40vh;
+  	margin:1rem; 
+  	background-color: $secundario;
+  	border: 3px solid;
+	h2{	text-align:center;
+		@include about(3rem,$fuente-bold,$texto);
+		& p{
+			@extend h2;
+			font-weight:$fuente-regular;
+			word-spacing:2.0;
+			line-height:2;
+			& span{
+				@include about(1rem,$fuente-bold,$texto);				
+			}
+	
+		}
+	}
+}
+
+
+/*
+
+#nosotros{
+  	min-height: 40vh;
+  	margin:1rem; 
+  	background-color: $secundario;
+  	border: 3px solid; 
+  		h2{
+  			text-align: center;
+  			color:$texto;
+  			font-weight:$fuente-bold;
+  		}
+  			p{ 
+  			   text-align: center;
+  			   font-weight:$fuente-regular; 
+  			   word-spacing:2.0;
+  			   line-height: 2;   			  		   
+  		    }  span{
+  		    	font-weight:$fuente-light-bold;
+  			    color:$texto;
+  			   }
+}
+
+
+*/
+/////////////////////////--------CARDS---------//////////////////
+.container{
+	background:$fondo-dark;
+	#ofertas{
+		.producto{padding:5px;
+			.card{
+				.card-body{
+					text-align: center;
+					.card-title{
+					height: 75px;						
+					}
+					.card-text{
+							font-weight: $fuente-bold;							
+				   }
+				}.btn-primary{
+					background-color:$fondo;
+					border-color: $bordes;
+				}
+			}
+		}
+	}
+}
+////////////////////////------------------------------//////////////////////
+
+
+  ///////////////////////--------submenu--------////////////////////////// 
+
+.input-group{
+	max-width: 25%;
+}
+
+button{
+	.btn-secondary{
+		background-color:$fondo-dark;
+	}
+	a{
+		text-decoration:none;
+		color:$texto-white;
+		&:hover{
+			text-decoration:none;
+			color:$texto-white;
+		} 
+		
+	}
+}
+
+.page-link{
+	background-color:$fondo-dark;
+	color:$texto-white;
+	&:hover{
+		background-color:$secundario;
+		color:$texto;
+	}
+
+}
+
+/////////////////////////////////////////////////////////////////////////////
+.formulario{
+	background-color:$fondo-dark;
+	h3{
+	   color:$texto-white;
+	   text-align:center;
+	   font-weight: $fuente-bold;
+	   background-color:$secundario;
+	}
+	.container{
+		background-color:$fondo-dark;
+		label{
+			color:$texto-white;
+		}
+    }textarea{
+    	margin-left: 1em;
+    }
+}
+
+/*
+.formulario{
+ 	background-color:$fondo-dark;		
+		.form__title--light{
+		color:$texto-white;
+	   text-align: center;
+	   font-weight: $fuente-bold;
+	   background-color:$secundario;	
+	   }
+		.container__form-dark{
+			background-color:$fondo-dark;
+		
+			.container__form--dark.form-white{
+			}	color:$texto-white;
+		}
+			 textarea{
+			 	margin-left: 1em;
+			 }
+
+}
+*/
+
+///////////////////////////////----MENU-RESEÑA-------//////////////////////
+h3{
+	font-weight:$fuente-light-bold;
+	text-align: center;
+	border:4px solid $fondo;
+	width:100%;
+	background-color:$secundario;
+	}
+
+.contenedor-resident{
+	min-height:40vh;
+	width: 100%;	 
+		p{
+			text-align: center;
+		}	
+}
+
+.contenedor-filtro{
+	text-align:end;			
+}
+
+@media all and (max-width: 768px){
+	.input-group .form-control{
+		width:30%;
+	}
+}

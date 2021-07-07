@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,500&display=swap");
+body {
+  background-color: #c7cad0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400; }
+
+a {
+  text-decoration: none;
+  color: #0b164f;
+  font-weight: 700; }
+
+h1 {
+  font-size: 1em;
+  color: #01070d;
+  font-weight: 600; }
+
+h3 {
+  font-weight: 700;
+  color: #01070d; }
+
+.index-banner {
+  height: 101vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(../media/fondo.jpg); }
+
+.juegos-banner {
+  height: 101vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(../media/dragonage.jpg); }
+
+.prod-banner {
+  height: 101vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(../media/pacman.jpg); }
+
+.blog-banner {
+  height: 101vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(../media/oldies.jpg); }
+
+/*
+.banner{	
+		background-image: url(../media/fondo.jpg);
+        height:101vh; 
+        background-repeat:no-repeat; 
+        background-size:cover;
+        background-position:center center; 
+}
+*/
+@media all and (max-width: 768px) {
+  .index-banner {
+    background-image: url(../media/fondo.jpg);
+    height: 20vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; } }
+
+@media all and (max-width: 768px) {
+  .juegos-banner {
+    background-image: url(../media/dragonage.jpg);
+    height: 20vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; } }
+
+@media all and (max-width: 768px) {
+  .prod-banner {
+    background-image: url(../media/pacman.jpg);
+    height: 20vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; } }
+
+@media all and (max-width: 768px) {
+  .blog-banner {
+    background-image: url(../media/oldies.jpg);
+    height: 20vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; } }
+
+.container-fluid nav {
+  background: linear-gradient(to left, #152146, #2d6366);
+  font-weight: 700; }
+
+.container-fluid .navbar-light .navbar-nav .nav-link {
+  color: white; }
+
+.container-fluid .navbar .nav-item {
+  padding-left: 15px; }
+
+.container-fluid .navbar-light .navbar-toggler {
+  background-color: #c7cad0; }
+
+.container-fluid a {
+  margin: 0px 15px 0px 15px;
+  padding: 0px 10px 0px 10px; }
+
+/*
+#videohome{
+  min-height: 60vh;
+  display: flex; 
+  flex-direction: column; 
+  justify-content:center;
+  align-items: center; 
+  margin-top: 1em;
+  				p{
+  				  text-align: center;
+ 			    } 
+}
+*/
+.row p {
+  text-align: center;
+  font-weight: 400; }
+
+a {
+  text-decoration: none;
+  color: 700; }
+
+.btn-primary {
+  background-color: #373440;
+  border-color: grey;
+  color: white; }
+  .btn-primary:hover {
+    background-color: #202531; }
+
+#nosotros {
+  min-height: 40vh;
+  margin: 1rem;
+  background-color: #9a96c3;
+  border: 3px solid; }
+  #nosotros h2, #nosotros h2 p {
+    text-align: center;
+    color: #01070d;
+    font-weight: 700; }
+  #nosotros p {
+    text-align: center;
+    font-weight: 400;
+    word-spacing: 2.0;
+    line-height: 2; }
+  #nosotros span {
+    font-weight: 600;
+    color: #01070d; }
+
+#nosotros {
+  min-height: 40vh;
+  margin: 1rem;
+  background-color: #9a96c3;
+  border: 3px solid; }
+  #nosotros h2, #nosotros h2 p {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #01070d; }
+    #nosotros h2 p {
+      font-weight: 400;
+      word-spacing: 2.0;
+      line-height: 2; }
+      #nosotros h2 p span {
+        font-size: 1rem;
+        font-weight: 700;
+        color: #01070d; }
+
+/*
+
+#nosotros{
+  	min-height: 40vh;
+  	margin:1rem; 
+  	background-color: $secundario;
+  	border: 3px solid; 
+  		h2{
+  			text-align: center;
+  			color:$texto;
+  			font-weight:$fuente-bold;
+  		}
+  			p{ 
+  			   text-align: center;
+  			   font-weight:$fuente-regular; 
+  			   word-spacing:2.0;
+  			   line-height: 2;   			  		   
+  		    }  span{
+  		    	font-weight:$fuente-light-bold;
+  			    color:$texto;
+  			   }
+}
+
+
+*/
+.container {
+  background: #202531; }
+  .container #ofertas .producto {
+    padding: 5px; }
+    .container #ofertas .producto .card .card-body {
+      text-align: center; }
+      .container #ofertas .producto .card .card-body .card-title {
+        height: 75px; }
+      .container #ofertas .producto .card .card-body .card-text {
+        font-weight: 700; }
+    .container #ofertas .producto .card .btn-primary {
+      background-color: #373440;
+      border-color: grey; }
+
+.input-group {
+  max-width: 25%; }
+
+button .btn-secondary {
+  background-color: #202531; }
+
+button a {
+  text-decoration: none;
+  color: white; }
+  button a:hover {
+    text-decoration: none;
+    color: white; }
+
+.page-link {
+  background-color: #202531;
+  color: white; }
+  .page-link:hover {
+    background-color: #9a96c3;
+    color: #01070d; }
+
+.formulario {
+  background-color: #202531; }
+  .formulario h3 {
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    background-color: #9a96c3; }
+  .formulario .container {
+    background-color: #202531; }
+    .formulario .container label {
+      color: white; }
+  .formulario textarea {
+    margin-left: 1em; }
+
+/*
+.formulario{
+ 	background-color:$fondo-dark;		
+		.form__title--light{
+		color:$texto-white;
+	   text-align: center;
+	   font-weight: $fuente-bold;
+	   background-color:$secundario;	
+	   }
+		.container__form-dark{
+			background-color:$fondo-dark;
+		
+			.container__form--dark.form-white{
+			}	color:$texto-white;
+		}
+			 textarea{
+			 	margin-left: 1em;
+			 }
+
+}
+*/
+h3 {
+  font-weight: 600;
+  text-align: center;
+  border: 4px solid #373440;
+  width: 100%;
+  background-color: #9a96c3; }
+
+.contenedor-resident {
+  min-height: 40vh;
+  width: 100%; }
+  .contenedor-resident p {
+    text-align: center; }
+
+.contenedor-filtro {
+  text-align: end; }
+
+@media all and (max-width: 768px) {
+  .input-group .form-control {
+    width: 30%; } }
