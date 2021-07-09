@@ -104,19 +104,6 @@ h3 {
   margin: 0px 15px 0px 15px;
   padding: 0px 10px 0px 10px; }
 
-/*
-#videohome{
-  min-height: 60vh;
-  display: flex; 
-  flex-direction: column; 
-  justify-content:center;
-  align-items: center; 
-  margin-top: 1em;
-  				p{
-  				  text-align: center;
- 			    } 
-}
-*/
 .row p {
   text-align: center;
   font-weight: 400; }
@@ -169,31 +156,6 @@ a {
         font-weight: 700;
         color: #01070d; }
 
-/*
-
-#nosotros{
-  	min-height: 40vh;
-  	margin:1rem; 
-  	background-color: $secundario;
-  	border: 3px solid; 
-  		h2{
-  			text-align: center;
-  			color:$texto;
-  			font-weight:$fuente-bold;
-  		}
-  			p{ 
-  			   text-align: center;
-  			   font-weight:$fuente-regular; 
-  			   word-spacing:2.0;
-  			   line-height: 2;   			  		   
-  		    }  span{
-  		    	font-weight:$fuente-light-bold;
-  			    color:$texto;
-  			   }
-}
-
-
-*/
 .container {
   background: #202531; }
   .container #ofertas .producto {
@@ -228,41 +190,36 @@ button a {
     background-color: #9a96c3;
     color: #01070d; }
 
-.formulario {
-  background-color: #202531; }
-  .formulario h3 {
-    color: white;
+.container-formulario {
+  background-color: #202531;
+  max-width: 98.5%; }
+  .container-formulario p {
     text-align: center;
+    margin-left: 1rem;
     font-weight: 700;
-    background-color: #9a96c3; }
-  .formulario .container {
+    font-size: 2rem;
+    color: #c7cad0; }
+  .container-formulario input {
+    text-align: center; }
+  .container-formulario button {
     background-color: #202531; }
-    .formulario .container label {
-      color: white; }
-  .formulario textarea {
-    margin-left: 1em; }
+    .container-formulario button:hover {
+      background-color: #9a96c3;
+      color: white;
+      border-color: #202531; }
 
-/*
-.formulario{
- 	background-color:$fondo-dark;		
-		.form__title--light{
-		color:$texto-white;
-	   text-align: center;
-	   font-weight: $fuente-bold;
-	   background-color:$secundario;	
-	   }
-		.container__form-dark{
-			background-color:$fondo-dark;
-		
-			.container__form--dark.form-white{
-			}	color:$texto-white;
-		}
-			 textarea{
-			 	margin-left: 1em;
-			 }
+.footer ul li {
+  text-align: center; }
+  .footer ul li a {
+    text-decoration: none;
+    margin-top: 4px;
+    color: white; }
 
-}
-*/
+.icon i {
+  font-size: 2rem;
+  color: white;
+  text-align: center; }
+
 h3 {
   font-weight: 600;
   text-align: center;

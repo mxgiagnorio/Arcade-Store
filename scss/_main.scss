@@ -144,19 +144,6 @@ h3{
 }
 
 //////////////////////---------------------------------//////////////////////
-/*
-#videohome{
-  min-height: 60vh;
-  display: flex; 
-  flex-direction: column; 
-  justify-content:center;
-  align-items: center; 
-  margin-top: 1em;
-  				p{
-  				  text-align: center;
- 			    } 
-}
-*/
 
 .row{
 	p{
@@ -224,31 +211,6 @@ h3{
 }
 
 
-/*
-
-#nosotros{
-  	min-height: 40vh;
-  	margin:1rem; 
-  	background-color: $secundario;
-  	border: 3px solid; 
-  		h2{
-  			text-align: center;
-  			color:$texto;
-  			font-weight:$fuente-bold;
-  		}
-  			p{ 
-  			   text-align: center;
-  			   font-weight:$fuente-regular; 
-  			   word-spacing:2.0;
-  			   line-height: 2;   			  		   
-  		    }  span{
-  		    	font-weight:$fuente-light-bold;
-  			    color:$texto;
-  			   }
-}
-
-
-*/
 /////////////////////////--------CARDS---------//////////////////
 .container{
 	background:$fondo-dark;
@@ -306,45 +268,48 @@ button{
 }
 
 /////////////////////////////////////////////////////////////////////////////
-.formulario{
+.container-formulario{
 	background-color:$fondo-dark;
-	h3{
-	   color:$texto-white;
-	   text-align:center;
-	   font-weight: $fuente-bold;
-	   background-color:$secundario;
+	max-width:98.5%;
+	p{
+		text-align: center;	
+		margin-left: 1rem;	
+		font-weight:$fuente-bold;
+		font-size: 2rem;
+		color:$primario;
 	}
-	.container{
+	input{
+		text-align:center;
+	}
+
+	button{
 		background-color:$fondo-dark;
-		label{
-			color:$texto-white;
-		}
-    }textarea{
-    	margin-left: 1em;
-    }
-}
-
-/*
-.formulario{
- 	background-color:$fondo-dark;		
-		.form__title--light{
+		&:hover{
+		background-color:$secundario;
 		color:$texto-white;
-	   text-align: center;
-	   font-weight: $fuente-bold;
-	   background-color:$secundario;	
-	   }
-		.container__form-dark{
-			background-color:$fondo-dark;
-		
-			.container__form--dark.form-white{
-			}	color:$texto-white;
+		border-color:$fondo-dark;
+		}  
+	}   
+}
+
+.footer{	
+	ul{
+		li{text-align: center;
+			a{
+				text-decoration:none;
+				margin-top: 4px;
+				color:$texto-white;
+			}
 		}
-			 textarea{
-			 	margin-left: 1em;
-			 }
+	}
 
 }
-*/
+
+.icon i{
+	font-size:2rem;
+	color:$texto-white;
+	text-align:center;
+}
 
 ///////////////////////////////----MENU-RESEÑA-------//////////////////////
 h3{
