@@ -70,16 +70,6 @@ h3{
 }
 
 
-
-/*
-.banner{	
-		background-image: url(../media/fondo.jpg);
-        height:101vh; 
-        background-repeat:no-repeat; 
-        background-size:cover;
-        background-position:center center; 
-}
-*/
 @media all and (max-width: 768px){
 	.index-banner{	
 		background-image: url(../media/fondo.jpg);
@@ -136,6 +126,7 @@ h3{
   			}
   			  .navbar-light .navbar-toggler{
   			   background-color:$primario;
+  			   outline: none;
   			   } 
   				 	a{
   				   	margin:0px 15px 0px 15px;
@@ -143,7 +134,7 @@ h3{
   				 	}
 }
 
-//////////////////////---------------------------------//////////////////////
+//////////////////////------VIDEO------------//////////////////////
 
 .row{
 	p{
@@ -163,51 +154,56 @@ h3{
 	} 
 	}
 
-
-#nosotros{
-  	min-height: 40vh;
-  	margin:1rem; 
-  	background-color: $secundario;
-  	border: 3px solid; 
-  		h2{
-  			text-align: center;
-  			color:$texto;
-  			font-weight:$fuente-bold;
-  		}
-  			p{ 
-  			   text-align: center;
-  			   font-weight:$fuente-regular; 
-  			   word-spacing:2.0;
-  			   line-height: 2;   			  		   
-  		    }  span{
-  		    	font-weight:$fuente-light-bold;
-  			    color:$texto;
-  			   }
-}
+	//////////////////////-----About--------//////////////////////
 
 @mixin about($size,$weight,$color){
 	font-size: $size;
 	font-weight: $weight;
 	color:$color;	
 }
-#nosotros{
-	min-height: 40vh;
+.container-about{
+	min-height:5vh;
   	margin:1rem; 
   	background-color: $secundario;
-  	border: 3px solid;
-	h2{	text-align:center;
-		@include about(3rem,$fuente-bold,$texto);
+		@include about(1rem,$fuente-light-bold,$texto);
 		& p{
-			@extend h2;
+			@extend p;
 			font-weight:$fuente-regular;
 			word-spacing:2.0;
 			line-height:2;
+			text-align:justify;
 			& span{
 				@include about(1rem,$fuente-bold,$texto);				
 			}
 	
 		}
+	
+}
+#nosotros{
+	font-weight:$fuente-bold;
+	font-size: 2rem;
+	text-align:center;
+}
+.icon-joystick{
+	text-align: center;
+	font-size: 9rem;
+}
+
+
+.icon-about{
+	font-size: 3rem;
+	text-align: -moz-center;
+	margin:50px; 
+	max-width:95%;
+	p{
+	font-weight: $fuente-light-bold;
+	font-size: 1rem;
+	text-align: center;
+
 	}
+
+	
+
 }
 
 
@@ -236,7 +232,7 @@ h3{
 ////////////////////////------------------------------//////////////////////
 
 
-  ///////////////////////--------submenu--------////////////////////////// 
+  ///////////////////////--------Juegos/productos--------////////////////////////// 
 
 .input-group{
 	max-width: 25%;
@@ -267,16 +263,19 @@ button{
 
 }
 
-/////////////////////////////////////////////////////////////////////////////
+////////////////////////////--------CONTACTO-------///////////////
 .container-formulario{
 	background-color:$fondo-dark;
 	max-width:98.5%;
+	text-align: center;
 	p{
 		text-align: center;	
 		margin-left: 1rem;	
 		font-weight:$fuente-bold;
 		font-size: 2rem;
 		color:$primario;
+	}   textarea{
+		text-align: center;
 	}
 	input{
 		text-align:center;

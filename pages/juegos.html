@@ -7,6 +7,8 @@
      <meta name=keywords content ="videojuegos, playstation,xbox,gta,fifa,cod,tienda virtual">
   <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css"> 
   <link rel="stylesheet" type="text/css" href="../css/estilos.css"> 
+  <!----------------iconos FONT AWESONE----------------!-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
   <title>ARCADE STORE los juegos mas vendidos de consolas play y xbox</title> 
 </head>
 <body>	
@@ -361,51 +363,45 @@
       </li>
     </ul>
   </nav>  
-
-
-                              <!-----------------FORMULARIO-----------------  !-->
-
-    <div class="formulario"> 
-        <h3 id="contacto">CONTACTO</h3>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-4">    
-                  <form>
-                      <div class="form-group">
-                          <label for="exampleFormControlInput1">Escribe tu correo</label>
-                          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@correo.com">
-                      </div>
-                      <div class="form-group">
-                          <label class="exampleFormControlSelect1 ">Info sobre</label>
-                          <select class="form-control" id="exampleFormControlSelect1">
-                              <option>Garantias</option>
-                              <option>Medios de pago</option>
-                              <option>Envios</option>
-                              <option>Ventas digitales</option>
-                              <option>Otras</option>
-                          </select>
-                      </div>
-                      <div class="form-group">
-                          <label for="exampleFormControlSelect2">Consulta sobre nuestros productos</label>
-                          <select multiple class="form-control" id="exampleFormControlSelect2">
-                              <option>Juegos</option>
-                              <option>Gift cards</option>
-                              <option>Coleccionables</option>
-                              <option>Audio</option>
-                              <option>Sillas Gamer</option>
-                              <option>Perifericos</option>
-                              <option>Todos</option>
-                          </select>
-                      </div>
-                      <div class="form-group">           
-                          <textarea placeholder="Tengo otra consulta"></textarea> 
-                          <input type="submit" name="sube_form" value="Enviar">
-                      </div>
-                  </form>
+                                               <!-----------------FOOTER-----------------  !-->
+     
+    <div class="container-formulario mt-2 mb-3 ml-2">
+        <div class="row justify-content-start">
+            <div class="col-lg-4">                               
+              <form id="contacto">
+                <div class="form-group mt-4 ml-2"> 
+                  <input type="email" class="form-control " aria-describedby="emailHelp"
+                  placeholder="Escribe tu email">           
                 </div>
+                <div class="form-group ml-2">
+                 <textarea placeholder="Tengo otra consulta"></textarea> 
+                </div>              
+                <button type="submit" class="btn btn-primary ml-2 rounded-0 mb-3">Enviar</button>
+              </form>
             </div>
-        </div>  
+            <div class="footer col-lg-4">
+                <p class="mt-3">Acceso rapido</p>
+                    <ul>
+                        <li class="mt-3"><a href="../index.html">Home</a></li>
+                        <li class="mt-3"><a href="juegos.html">Juegos</a></li>
+                        <li class="mt-3"><a href="productos.html.html">Productos</a></li>
+                        <li class="mt-3"><a href="reseñas.html">Reseñas</a></li>
+                    </ul>  
+            </div>
+                                    <!-----------------RRSS-----------------  !-->
+
+            <div class="col-lg-4">
+              <p class="mt-3">Nuestras redes</p>
+              <div class="icon d-flex flex-column">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook-f mt-3"></i>
+                <i class="fab fa-twitter mt-3"></i>               
+              </div>
+            </div>
+        </div>
     </div>
+
+
 
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->

@@ -46,15 +46,6 @@ h3 {
   background-position: center center;
   background-image: url(../media/oldies.jpg); }
 
-/*
-.banner{	
-		background-image: url(../media/fondo.jpg);
-        height:101vh; 
-        background-repeat:no-repeat; 
-        background-size:cover;
-        background-position:center center; 
-}
-*/
 @media all and (max-width: 768px) {
   .index-banner {
     background-image: url(../media/fondo.jpg);
@@ -98,7 +89,8 @@ h3 {
   padding-left: 15px; }
 
 .container-fluid .navbar-light .navbar-toggler {
-  background-color: #c7cad0; }
+  background-color: #c7cad0;
+  outline: none; }
 
 .container-fluid a {
   margin: 0px 15px 0px 15px;
@@ -119,42 +111,41 @@ a {
   .btn-primary:hover {
     background-color: #202531; }
 
-#nosotros {
-  min-height: 40vh;
+.container-about {
+  min-height: 5vh;
   margin: 1rem;
   background-color: #9a96c3;
-  border: 3px solid; }
-  #nosotros h2, #nosotros h2 p {
-    text-align: center;
-    color: #01070d;
-    font-weight: 700; }
-  #nosotros p {
-    text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #01070d; }
+  .container-about p {
     font-weight: 400;
     word-spacing: 2.0;
-    line-height: 2; }
-  #nosotros span {
-    font-weight: 600;
-    color: #01070d; }
+    line-height: 2;
+    text-align: justify; }
+    .container-about p span {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #01070d; }
 
 #nosotros {
-  min-height: 40vh;
-  margin: 1rem;
-  background-color: #9a96c3;
-  border: 3px solid; }
-  #nosotros h2, #nosotros h2 p {
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 700;
-    color: #01070d; }
-    #nosotros h2 p {
-      font-weight: 400;
-      word-spacing: 2.0;
-      line-height: 2; }
-      #nosotros h2 p span {
-        font-size: 1rem;
-        font-weight: 700;
-        color: #01070d; }
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center; }
+
+.icon-joystick {
+  text-align: center;
+  font-size: 9rem; }
+
+.icon-about {
+  font-size: 3rem;
+  text-align: -moz-center;
+  margin: 50px;
+  max-width: 95%; }
+  .icon-about p {
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center; }
 
 .container {
   background: #202531; }
@@ -192,13 +183,16 @@ button a {
 
 .container-formulario {
   background-color: #202531;
-  max-width: 98.5%; }
+  max-width: 98.5%;
+  text-align: center; }
   .container-formulario p {
     text-align: center;
     margin-left: 1rem;
     font-weight: 700;
     font-size: 2rem;
     color: #c7cad0; }
+  .container-formulario textarea {
+    text-align: center; }
   .container-formulario input {
     text-align: center; }
   .container-formulario button {
