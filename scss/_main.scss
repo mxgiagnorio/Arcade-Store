@@ -13,12 +13,18 @@ a{
 h1{
 	font-size: 1em;
 	color:$texto;
-	font-weight:$fuente-light-bold;
+	word-spacing:2.0;
+	line-height:2;
+	font-weight:$fuente-regular;
 }
 
 h3{
 	font-weight: $fuente-bold;
 	color:$texto;
+}
+
+span{
+	font-weight: $fuente-light-bold;
 }
 
 @mixin mibanner($fondo){
@@ -140,6 +146,8 @@ h3{
 	p{
 	text-align: center;
 	font-weight:$fuente-regular;
+	word-spacing:2.0;
+	line-height:2;
 	}
 	}a{text-decoration:none;
 		color:$fuente-bold;		
@@ -229,6 +237,159 @@ h3{
 		}
 	}
 }
+
+@media all and (max-width:991px){		
+	#ofertas{	
+		.producto{padding:15px;
+				   display: inline-flex;
+ 	               max-width:50%;
+	               flex-direction:column;
+	               flex-basis:14em;
+			.card{
+				.card-body{
+					text-align: center;
+					.card-title{
+					height: 75px;						
+					}
+					.card-text{
+					font-weight: $fuente-bold;							
+				   }
+				}.btn-primary{
+					background-color:$fondo;
+					border-color: $bordes;
+				}
+			}
+		}
+	}
+}
+		
+@media all and (max-width:767px){		
+	#ofertas{	
+		.producto{padding:15px;
+				   display: inline-flex;
+ 	               max-width:35%;
+	               flex-direction:column;
+	               flex-basis:10em;
+			.card{
+				.card-body{
+					text-align: center;
+					.card-title{
+					height: 75px;						
+					}
+					.card-text{
+							font-weight: $fuente-bold;							
+				   }
+				}.btn-primary{
+					background-color:$fondo;
+					border-color: $bordes;
+				}
+			}
+		}
+	}
+}
+
+@media all and (max-width:575px){		
+	#ofertas{	
+		.producto{padding:15px;
+				   display: inline-flex;
+ 	               max-width:35%;
+	               flex-direction:column;
+	               flex-basis:10em;
+			.card{
+				.card-body{
+					text-align: center;
+					.card-title{
+					height: 75px;						
+					}
+					.card-text{
+							font-weight: $fuente-bold;							
+				   }
+				}.btn-primary{
+					background-color:$fondo;
+					border-color: $bordes;
+				}
+			}
+		}
+	}
+}
+
+@media all and (max-width:509px){		
+	#ofertas{	
+		.producto{padding:15px;
+				   display: inline-flex;
+ 	               max-width:35%;
+	               flex-direction:column;
+	               flex-basis:10em;
+			.card{
+				.card-body{
+					text-align: center;
+					.card-title{
+					height: 75px;						
+					}
+					.card-text{
+							font-weight: $fuente-bold;							
+				   }
+				}.btn-primary{
+					background-color:$fondo;
+					border-color: $bordes;
+				}
+			}
+		}
+	}
+}
+
+@media all and (max-width:500px){		
+	#ofertas{	
+		.producto{padding:10px;
+				   display: inline-flex;
+ 	               max-width:60%;
+	               flex-direction:column;
+	               flex-basis:9em;
+			.card{
+				.card-body{
+					text-align: center;
+					line-height:3.5;
+					.card-title{
+					height: 75px;						
+					}
+					.card-text{
+							font-weight: $fuente-bold;							
+				   }
+				}.btn-primary{
+					background-color:$fondo;
+					border-color: $bordes;
+				}
+			}
+		}
+	}
+}
+
+
+
+@media all and (max-width:430px){		
+	#ofertas{	
+		.producto{padding:15px;
+				   display: inline-flex;
+ 	               max-width:50%;
+	               flex-direction:column;
+	               flex-basis:12em;
+			.card{
+				.card-body{
+					text-align: center;
+					.card-title{
+					height: 75px;						
+					}
+					.card-text{
+							font-weight: $fuente-bold;							
+				   }
+				}.btn-primary{
+					background-color:$fondo;
+					border-color: $bordes;
+				}
+			}
+		}
+	}
+}
 ////////////////////////------------------------------//////////////////////
 
 
@@ -241,6 +402,10 @@ h3{
 button{
 	.btn-secondary{
 		background-color:$fondo-dark;
+		&:focus{
+			outline:none;
+			box-shadow:none;
+		}
 	}
 	a{
 		text-decoration:none;
@@ -266,8 +431,9 @@ button{
 ////////////////////////////--------CONTACTO-------///////////////
 .container-formulario{
 	background-color:$fondo-dark;
-	max-width:98.5%;
-	text-align: center;
+	width:100%;
+	text-align:center;
+	padding-right:15px;
 	p{
 		text-align: center;	
 		margin-left: 1rem;	

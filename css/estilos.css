@@ -12,11 +12,16 @@ a {
 h1 {
   font-size: 1em;
   color: #01070d;
-  font-weight: 600; }
+  word-spacing: 2.0;
+  line-height: 2;
+  font-weight: 400; }
 
 h3 {
   font-weight: 700;
   color: #01070d; }
+
+span {
+  font-weight: 600; }
 
 .index-banner {
   height: 101vh;
@@ -98,7 +103,9 @@ h3 {
 
 .row p {
   text-align: center;
-  font-weight: 400; }
+  font-weight: 400;
+  word-spacing: 2.0;
+  line-height: 2; }
 
 a {
   text-decoration: none;
@@ -161,11 +168,117 @@ a {
       background-color: #373440;
       border-color: grey; }
 
+@media all and (max-width: 991px) {
+  #ofertas .producto {
+    padding: 15px;
+    display: inline-flex;
+    max-width: 50%;
+    flex-direction: column;
+    flex-basis: 14em; }
+    #ofertas .producto .card .card-body {
+      text-align: center; }
+      #ofertas .producto .card .card-body .card-title {
+        height: 75px; }
+      #ofertas .producto .card .card-body .card-text {
+        font-weight: 700; }
+    #ofertas .producto .card .btn-primary {
+      background-color: #373440;
+      border-color: grey; } }
+
+@media all and (max-width: 767px) {
+  #ofertas .producto {
+    padding: 15px;
+    display: inline-flex;
+    max-width: 35%;
+    flex-direction: column;
+    flex-basis: 10em; }
+    #ofertas .producto .card .card-body {
+      text-align: center; }
+      #ofertas .producto .card .card-body .card-title {
+        height: 75px; }
+      #ofertas .producto .card .card-body .card-text {
+        font-weight: 700; }
+    #ofertas .producto .card .btn-primary {
+      background-color: #373440;
+      border-color: grey; } }
+
+@media all and (max-width: 575px) {
+  #ofertas .producto {
+    padding: 15px;
+    display: inline-flex;
+    max-width: 35%;
+    flex-direction: column;
+    flex-basis: 10em; }
+    #ofertas .producto .card .card-body {
+      text-align: center; }
+      #ofertas .producto .card .card-body .card-title {
+        height: 75px; }
+      #ofertas .producto .card .card-body .card-text {
+        font-weight: 700; }
+    #ofertas .producto .card .btn-primary {
+      background-color: #373440;
+      border-color: grey; } }
+
+@media all and (max-width: 509px) {
+  #ofertas .producto {
+    padding: 15px;
+    display: inline-flex;
+    max-width: 35%;
+    flex-direction: column;
+    flex-basis: 10em; }
+    #ofertas .producto .card .card-body {
+      text-align: center; }
+      #ofertas .producto .card .card-body .card-title {
+        height: 75px; }
+      #ofertas .producto .card .card-body .card-text {
+        font-weight: 700; }
+    #ofertas .producto .card .btn-primary {
+      background-color: #373440;
+      border-color: grey; } }
+
+@media all and (max-width: 500px) {
+  #ofertas .producto {
+    padding: 10px;
+    display: inline-flex;
+    max-width: 60%;
+    flex-direction: column;
+    flex-basis: 9em; }
+    #ofertas .producto .card .card-body {
+      text-align: center;
+      line-height: 3.5; }
+      #ofertas .producto .card .card-body .card-title {
+        height: 75px; }
+      #ofertas .producto .card .card-body .card-text {
+        font-weight: 700; }
+    #ofertas .producto .card .btn-primary {
+      background-color: #373440;
+      border-color: grey; } }
+
+@media all and (max-width: 430px) {
+  #ofertas .producto {
+    padding: 15px;
+    display: inline-flex;
+    max-width: 50%;
+    flex-direction: column;
+    flex-basis: 12em; }
+    #ofertas .producto .card .card-body {
+      text-align: center; }
+      #ofertas .producto .card .card-body .card-title {
+        height: 75px; }
+      #ofertas .producto .card .card-body .card-text {
+        font-weight: 700; }
+    #ofertas .producto .card .btn-primary {
+      background-color: #373440;
+      border-color: grey; } }
+
 .input-group {
   max-width: 25%; }
 
 button .btn-secondary {
   background-color: #202531; }
+  button .btn-secondary:focus {
+    outline: none;
+    box-shadow: none; }
 
 button a {
   text-decoration: none;
@@ -183,8 +296,9 @@ button a {
 
 .container-formulario {
   background-color: #202531;
-  max-width: 98.5%;
-  text-align: center; }
+  width: 100%;
+  text-align: center;
+  padding-right: 15px; }
   .container-formulario p {
     text-align: center;
     margin-left: 1rem;
