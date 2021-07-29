@@ -2,6 +2,7 @@ body{
 	background-color: $primario;
 	font-family: $fuente;
 	font-weight: $fuente-regular;
+
 }
 
 a{ 
@@ -22,6 +23,7 @@ h3{
 	font-weight: $fuente-bold;
 	color:$texto;
 }
+
 
 span{
 	font-weight: $fuente-light-bold;
@@ -75,48 +77,84 @@ span{
     @include mibanner(reseñas); 
 }
 
-
 @media all and (max-width: 768px){
 	.index-banner{	
-		background-image: url(../media/fondo.jpg);
+		background-image: url(../media/fondomd.png);
         height:20vh; 
         background-repeat:no-repeat; 
         background-size:cover;
         background-position:center center; 
+	}	
 }
-	
+
+@media all and (max-width: 425px){
+	.index-banner{	
+		background-image: url(../media/fondomob.png);
+        height:20vh; 
+        background-repeat:no-repeat; 
+        background-size:cover;
+        background-position:center center; 
+	}	
 }
+
 @media all and (max-width: 768px){
 	.juegos-banner{	
-		background-image: url(../media/dragonage.jpg);
+		background-image: url(../media/dragonagemd.png);
         height:20vh; 
         background-repeat:no-repeat; 
         background-size:cover;
         background-position:center center; 
+	}	
 }
-	
+
+@media all and (max-width: 425px){
+	.juegos-banner{	
+		background-image: url(../media/dragonagemob.png);
+        height:20vh; 
+        background-repeat:no-repeat; 
+        background-size:cover;
+        background-position:center center; 
+	}	
 }
+
 @media all and (max-width: 768px){
 	.prod-banner{	
-		background-image: url(../media/pacman.jpg);
+		background-image: url(../media/pacmanmd.png);
         height:20vh; 
         background-repeat:no-repeat; 
         background-size:cover;
         background-position:center center; 
+	}	
 }
-	
+
+@media all and (max-width:425px){
+	.prod-banner{	
+		background-image: url(../media/pacmanmob.png);
+        height:20vh; 
+        background-repeat:no-repeat; 
+        background-size:cover;
+        background-position:center center; 
+	}
 }
 @media all and (max-width: 768px){
 	.blog-banner{	
-		background-image: url(../media/oldies.jpg);
+		background-image: url(../media/oldiesmd.png);
         height:20vh; 
         background-repeat:no-repeat; 
         background-size:cover;
         background-position:center center; 
-}
-	
+	}
 }
 
+@media all and (max-width: 425px){
+	.blog-banner{	
+		background-image: url(../media/oldies.png);
+        height:20vh; 
+        background-repeat:no-repeat; 
+        background-size:cover;
+        background-position:center center; 
+	}
+}
 //////////////////////////////---MENU----//////////////////////////////////
 
 .container-fluid{
@@ -149,18 +187,19 @@ span{
 	word-spacing:2.0;
 	line-height:2;
 	}
-	}a{text-decoration:none;
-		color:$fuente-bold;		
-	}
+	a{text-decoration:none;
+		color:$fuente-bold;
+	}		
+}
 
-.btn-primary{
+.btn-dark{
 	background-color:$fondo;
 	border-color: $bordes; 
 	color:$texto-white;
 	&:hover{
 		background-color:$fondo-dark;
-	} 
-	}
+		}
+}
 
 	//////////////////////-----About--------//////////////////////
 
@@ -197,7 +236,6 @@ span{
 	font-size: 9rem;
 }
 
-
 .icon-about{
 	font-size: 3rem;
 	text-align: -moz-center;
@@ -209,9 +247,6 @@ span{
 	text-align: center;
 
 	}
-
-	
-
 }
 
 
@@ -229,13 +264,25 @@ span{
 					.card-text{
 							font-weight: $fuente-bold;							
 				   }
-				}.btn-primary{
+				}.btn-dark{
 					background-color:$fondo;
 					border-color: $bordes;
 				}
 			}
 		}
 	}
+}
+
+.modal-content{
+	width:80%;
+}
+.modal-header{
+background-color:$primario;	
+}
+
+.modal-title{
+	text-align:center;
+	font-weight: $fuente-light-bold;
 }
 
 @media all and (max-width:991px){		
@@ -364,8 +411,6 @@ span{
 	}
 }
 
-
-
 @media all and (max-width:430px){		
 	#ofertas{	
 		.producto{padding:15px;
@@ -390,21 +435,19 @@ span{
 		}
 	}
 }
-////////////////////////------------------------------//////////////////////
-
 
   ///////////////////////--------Juegos/productos--------////////////////////////// 
 
 .input-group{
-	max-width: 25%;
+	max-width: 45%;
 }
 
 button{
 	.btn-secondary{
 		background-color:$fondo-dark;
 		&:focus{
-			outline:none;
-			box-shadow:none;
+			outline-color:transparent;
+			outline-style: none;
 		}
 	}
 	a{
@@ -428,7 +471,8 @@ button{
 
 }
 
-////////////////////////////--------CONTACTO-------///////////////
+
+               ////////////////////////////--------FOOTER-------///////////////
 .container-formulario{
 	background-color:$fondo-dark;
 	width:100%;
@@ -442,6 +486,7 @@ button{
 		color:$primario;
 	}   textarea{
 		text-align: center;
+		resize: none;
 	}
 	input{
 		text-align:center;
@@ -476,7 +521,9 @@ button{
 	text-align:center;
 }
 
-///////////////////////////////----MENU-RESEÑA-------//////////////////////
+///////////////////////////////----Botones/contenedores-------//////////////////////
+
+
 h3{
 	font-weight:$fuente-light-bold;
 	text-align: center;
@@ -494,11 +541,26 @@ h3{
 }
 
 .contenedor-filtro{
-	text-align:end;			
+	text-align:center;			
+}
+a.btn.btn-primary{
+	text-decoration:none;
+	background-color:$fondo-dark;
+	color:$texto-white;
+	&:hover{
+		background-color:$secundario;
+		color:$texto;
+		&focus{
+			box-shadow:none;
+			outline:none;
+		}
+	}
+
 }
 
-@media all and (max-width: 768px){
-	.input-group .form-control{
-		width:30%;
+@media all and (max-width:778px){
+	.input-group{
+		width:60%;
 	}
 }
+

@@ -7,13 +7,13 @@
     <meta name=keywords content="joysticks,funko,auriculares, gift card"> 
   <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css"> 
   <link rel="stylesheet" type="text/css" href="../css/estilos.css"> 
-  <!----------------iconos FONT AWESONE----------------!-->
+   <!-- - - - - iconos FONT AWESONE - - - - - -!-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
   <title>ARCADE STORE venta online de audio, gift cards,accesorios, funko y joysticks</title> 
 </head>
   <body>  
 
-                                  <!----------------MENU----------------!-->
+                                   <!-- - - - - menu - - - - - -!-->
   <div class="container-fluid px-0">
         <nav class="navbar navbar-expand-lg navbar-light bg-light px-0">
           <a class="navbar-brand px-3" href="../index.html">
@@ -50,28 +50,44 @@
     <div class="prod-banner">
     </div>
 
-                                                    <!----------------filtros----------------!-->
-    <div class="input-group mt-4">
+                                                     <!-- - - - - filtros - - - - - -!-->
+    <div class="input-group mt-5">
     <div class="input-group-prepend">
         <div class="input-group-text" id="btnGroupAddon2">Busqueda rapida</div>
     </div>
-        <input type="text" class="form-control" placeholder="Ingresar articulo" aria-label="Input group example" aria-describedby="btnGroupAddon2">
+        <input type="text" class="form-control" placeholder="Ingresar articulo" aria-describedby="btnGroupAddon2">
     </div>
 
     <div class="contenedor-filtro">
       <div class="btn-group-vertical mt-5" role="group" aria-label="Button group with nested dropdown">
       </div>
-          <button type="button" class="btn btn-secondary mr-1 mt-5"><a class="joys" href="#joysticks">Joysticks</a>
-          <button type="button" class="btn btn-secondary mr-1 mt-5"><a class="audio" href="#audio">Audio</a>
-          <button type="button" class="btn btn-secondary mr-1 mt-5"><a class="Sillas" href="#sillas">Sillas gamer</a>
-          <button type="button" class="btn btn-secondary mr-1 mt-5"><a class="accesorios" href="#accesorios">Accesorios</a>
-    </div>    
+        <div>
+          <button type="button" class="btn btn-secondary mr-1 mt-5"><a class="joys" href="#joysticks">Joysticks</a></button>
+          <button type="button" class="btn btn-secondary mr-1 mt-5"><a class="audio" href="#audio">Audio</a></button>
+          <button type="button" class="btn btn-secondary mr-1 mt-5"><a class="Sillas" href="#sillas">Sillas gamer</a></button>
+          <button type="button" class="btn btn-secondary mr-1 mt-5"><a class="accesorios" href="#accesorios">Accesorios</a></button>
+        </div> 
+    </div>   
   
 
-                                            <!----------------productos----------------!-->
-                                            <!----------------audio----------------!-->
-  <div class="mt-3">
-  <h3 id="audio"=>Audio</h3>   
+                                             <!-- - - - - PRODUCTOS - - - - - -!-->
+
+                                           <!-- Modal -->
+              <div class="modal fade" id="btncomprar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Gracias por confiar en nosotros!</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                                             <!-- - - - - audio - - - - - -!-->
+  <div class="mt-5"> 
+  <h3 id="audio">Audio</h3>   
   </div>
   
   <div class="container">
@@ -80,9 +96,9 @@
                     <div class="card">
                         <img src="../media/aurisblancos.png" class="card-img-top" alt="joystick">
                       <div class="card-body">
-                          <h5 class="card-title">Joystick PS4</h5>
-                          <p class="card-text typeM bold">$9000</p>
-                          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                          <h5 class="card-title">Auriculares blancos</h5>
+                          <p class="card-text typeM bold">$4500</p>
+                          <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#btncomprar">Agregar al carrito</button>
                       </div>
                     </div>                    
                 </div>
@@ -90,9 +106,9 @@
                     <div class="card">
                         <img src="../media/auris-es.png" class="card-img-top" alt="gta">
                       <div class="card-body">
-                          <h5 class="card-title">Grand Theft Auto IV</h5>
-                          <p class="card-text typeM bold">$3000</p>
-                          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                          <h5 class="card-title">Auriculares celestes</h5>
+                          <p class="card-text typeM bold">$6500</p>
+                          <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#btncomprar">Agregar al carrito</button>
                       </div>
                     </div>
                 </div>
@@ -100,9 +116,9 @@
                     <div class="card">
                         <img src="../media/aurisgreen.png" class="card-img-top" alt="silla">
                       <div class="card-body">
-                          <h5 class="card-title">Silla gamer color azul</h5>
-                          <p class="card-text typeM bold">$16000</p>
-                          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                          <h5 class="card-title">Auriculares verdes</h5>
+                          <p class="card-text typeM bold">$7000</p>
+                          <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#btncomprar">Agregar al carrito</button>
                       </div>
                     </div>
                 </div>
@@ -110,9 +126,9 @@
                     <div class="card">
                         <img src="../media/blueauris.png" class="card-img-top" alt="Joystick">
                       <div class="card-body">
-                          <h5 class="card-title">Joystick PS4 dorado</h5>
-                          <p class="card-text typeM bold">$10000.</p>
-                          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                          <h5 class="card-title">Auriculares azules</h5>
+                          <p class="card-text typeM bold">$5000</p>
+                          <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#btncomprar">Agregar al carrito</button>
                       </div>
                     </div>
                 </div>
@@ -120,9 +136,9 @@
                     <div class="card">
                         <img src="../media/razerauris.png" class="card-img-top" alt="fifa21">
                       <div class="card-body">
-                          <h5 class="card-title">Fifa 21</h5>
-                          <p class="card-text typeM bold">$3400.</p>
-                          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                          <h5 class="card-title">Auriculares rosa</h5>
+                          <p class="card-text typeM bold">$6000</p>
+                          <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#btncomprar">Agregar al carrito</button>
                       </div>
                     </div>
                 </div>
@@ -130,18 +146,18 @@
                     <div class="card">
                         <img src="../media/auris-steel.png" class="card-img-top" alt="Callofduty">
                       <div class="card-body">
-                          <h5 class="card-title">Call of Duty: Cold War</h5>
+                          <h5 class="card-title">Auriculares azul y blanco</h5>
                           <p class="card-text typeM bold">$3800.</p>
-                          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                          <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#btncomprar">Agregar al carrito</button>
                       </div>
                     </div>
               </div>                          
         </div>
     </div>
-                                                <!----------------joysticks----------------!-->
+                                                 <!-- - - - - Joysticks - - - - - -!-->
 
     <div class="mt-3">
-  <h3 id="joysticks"=>Joysticks</h3>   
+  <h3 id="joysticks">Joysticks</h3>   
   </div>
 
     <div class="container">
@@ -152,7 +168,7 @@
                       <div class="card-body">
                           <h5 class="card-title">Joystick PS4</h5>
                           <p class="card-text typeM bold">$9000</p>
-                          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                          <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#btncomprar">Agregar al carrito</button>
                       </div>
                     </div>                    
                 </div>
@@ -160,9 +176,9 @@
                     <div class="card">
                         <img src="../media/camuflado.png" class="card-img-top" alt="gta">
                       <div class="card-body">
-                          <h5 class="card-title">Grand Theft Auto IV</h5>
-                          <p class="card-text typeM bold">$3000</p>
-                          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                          <h5 class="card-title">Joystick PS4 camuflado</h5>
+                          <p class="card-text typeM bold">$9500</p>
+                          <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#btncomprar">Agregar al carrito</button>
                       </div>
                     </div>
                 </div>
@@ -170,9 +186,9 @@
                     <div class="card">
                         <img src="../media/xboxonejoys.png" class="card-img-top" alt="silla">
                       <div class="card-body">
-                          <h5 class="card-title">Silla gamer color azul</h5>
-                          <p class="card-text typeM bold">$16000</p>
-                          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                          <h5 class="card-title">Joystick XBOX ONE</h5>
+                          <p class="card-text typeM bold">$9000</p>
+                          <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#btncomprar">Agregar al carrito</button>
                       </div>
                     </div>
                 </div>
@@ -181,8 +197,8 @@
                         <img src="../media/joysgold.jpg" class="card-img-top" alt="Joystick">
                       <div class="card-body">
                           <h5 class="card-title">Joystick PS4 dorado</h5>
-                          <p class="card-text typeM bold">$10000.</p>
-                          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                          <p class="card-text typeM bold">$10500</p>
+                         <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#btncomprar">Agregar al carrito</button>
                       </div>
                     </div>
                 </div>
@@ -190,9 +206,9 @@
                     <div class="card">
                         <img src="../media/series.png" class="card-img-top" alt="fifa21">
                       <div class="card-body">
-                          <h5 class="card-title">Fifa 21</h5>
-                          <p class="card-text typeM bold">$3400.</p>
-                          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                          <h5 class="card-title">Joystick XBOX Series</h5>
+                          <p class="card-text typeM bold">$11500</p>
+                          <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#btncomprar">Agregar al carrito</button>
                       </div>
                     </div>
                 </div>
@@ -200,18 +216,17 @@
                     <div class="card">
                         <img src="../media/joystick5.png" class="card-img-top" alt="Callofduty">
                       <div class="card-body">
-                          <h5 class="card-title">Call of Duty: Cold War</h5>
-                          <p class="card-text typeM bold">$3800.</p>
-                          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                          <h5 class="card-title">Joystick PS5</h5>
+                          <p class="card-text typeM bold">$12000</p>
+                          <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#btncomprar">Agregar al carrito</button>
                       </div>
                     </div>
               </div>                          
         </div>
     </div>
-                                                <!----------------accesorios----------------!-->
-
+                                                 <!-- - - - - accesorios - - - - - -!-->
       <div class="mt-3">
-  <h3 id="accesorios"=>Accesorios</h3>   
+  <h3 id="accesorios">Accesorios</h3>   
   </div> 
 
     <div class="container">
@@ -220,9 +235,9 @@
                     <div class="card">
                         <img src="../media/hdm1.png" class="card-img-top" alt="joystick">
                       <div class="card-body">
-                          <h5 class="card-title">Joystick PS4</h5>
-                          <p class="card-text typeM bold">$9000</p>
-                          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                          <h5 class="card-title">Cable HDMI</h5>
+                          <p class="card-text typeM bold">$1500</p>
+                          <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#btncomprar">Agregar al carrito</button>
                       </div>
                     </div>                    
                 </div>
@@ -230,9 +245,9 @@
                     <div class="card">
                         <img src="../media/rick.png" class="card-img-top" alt="gta">
                       <div class="card-body">
-                          <h5 class="card-title">Grand Theft Auto IV</h5>
-                          <p class="card-text typeM bold">$3000</p>
-                          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                          <h5 class="card-title">Funko Pop Rick Sanchez</h5>
+                          <p class="card-text typeM bold">$4500</p>
+                         <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#btncomprar">Agregar al carrito</button>
                       </div>
                     </div>
                 </div>
@@ -240,19 +255,19 @@
                     <div class="card">
                         <img src="../media/gift.png" class="card-img-top" alt="silla">
                       <div class="card-body">
-                          <h5 class="card-title">Silla gamer color azul</h5>
-                          <p class="card-text typeM bold">$16000</p>
-                          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                          <h5 class="card-title">Gift Card PS4</h5>
+                          <p class="card-text typeM bold">$4500</p>
+                         <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#btncomprar">Agregar al carrito</button>
                       </div>
                     </div>
                 </div>
                 <div class="producto col-12 col-md-2">
                     <div class="card">
-                        <img src="../media/Crash_funko.png" class="card-img-top" alt="Joystick">
+                        <img src="../media/crash_funko.png" class="card-img-top" alt="Joystick">
                       <div class="card-body">
-                          <h5 class="card-title">Joystick PS4 dorado</h5>
-                          <p class="card-text typeM bold">$10000.</p>
-                          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                          <h5 class="card-title">Funko Pop Crash Bandicoot</h5>
+                          <p class="card-text typeM bold">$5000</p>
+                         <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#btncomprar">Agregar al carrito</button>
                       </div>
                     </div>
                 </div>
@@ -260,9 +275,9 @@
                     <div class="card">
                         <img src="../media/kratos.png" class="card-img-top" alt="fifa21">
                       <div class="card-body">
-                          <h5 class="card-title">Fifa 21</h5>
-                          <p class="card-text typeM bold">$3400.</p>
-                          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                          <h5 class="card-title">Funko Pop Kratos</h5>
+                          <p class="card-text typeM bold">$5500</p>
+                          <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#btncomprar">Agregar al carrito</button>
                       </div>
                     </div>
                 </div>
@@ -270,17 +285,17 @@
                     <div class="card">
                         <img src="../media/volante.png" class="card-img-top" alt="Callofduty">
                       <div class="card-body">
-                          <h5 class="card-title">Call of Duty: Cold War</h5>
+                          <h5 class="card-title">Volante y pedalera PS4-PS5</h5>
                           <p class="card-text typeM bold">$3800.</p>
-                          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                          <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#btncomprar">Agregar al carrito</button>
                       </div>
                     </div>
               </div>                          
         </div>
     </div>
-                                                          <!----------------sillas----------------!-->
+                                                           <!-- - - - - Sillas - - - - - -!-->
      <div class="mt-3">
-  <h3 id="sillas"=>Sillas gamer</h3>   
+  <h3 id="sillas">Sillas gamer</h3>   
   </div>
 
     <div class="container">
@@ -289,9 +304,9 @@
                     <div class="card">
                         <img src="../media/fenixsilla.png" class="card-img-top" alt="joystick">
                       <div class="card-body">
-                          <h5 class="card-title">Joystick PS4</h5>
-                          <p class="card-text typeM bold">$9000</p>
-                          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                          <h5 class="card-title">Silla gamer azul</h5>
+                          <p class="card-text typeM bold">$12000</p>
+                         <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#btncomprar">Agregar al carrito</button>
                       </div>
                     </div>                    
                 </div>
@@ -299,9 +314,9 @@
                     <div class="card">
                         <img src="../media/violetsilla.png" class="card-img-top" alt="gta">
                       <div class="card-body">
-                          <h5 class="card-title">Grand Theft Auto IV</h5>
-                          <p class="card-text typeM bold">$3000</p>
-                          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                          <h5 class="card-title">Silla gamer violeta</h5>
+                          <p class="card-text typeM bold">$15500</p>
+                          <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#btncomprar">Agregar al carrito</button>
                       </div>
                     </div>
                 </div>
@@ -309,9 +324,9 @@
                     <div class="card">
                         <img src="../media/silla.jpg" class="card-img-top" alt="silla">
                       <div class="card-body">
-                          <h5 class="card-title">Silla gamer color azul</h5>
+                          <h5 class="card-title">Silla gamer magenta</h5>
                           <p class="card-text typeM bold">$16000</p>
-                          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                          <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#btncomprar">Agregar al carrito</button>
                       </div>
                     </div>
                 </div>
@@ -319,9 +334,9 @@
                     <div class="card">
                         <img src="../media/sillablanca.png" class="card-img-top" alt="Joystick">
                       <div class="card-body">
-                          <h5 class="card-title">Joystick PS4 dorado</h5>
-                          <p class="card-text typeM bold">$10000.</p>
-                          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                          <h5 class="card-title">Silla gamer blanco</h5>
+                          <p class="card-text typeM bold">$13500</p>
+                          <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#btncomprar">Agregar al carrito</button>
                       </div>
                     </div>
                 </div>
@@ -329,9 +344,9 @@
                     <div class="card">
                         <img src="../media/sillanegra.png" class="card-img-top" alt="fifa21">
                       <div class="card-body">
-                          <h5 class="card-title">Fifa 21</h5>
-                          <p class="card-text typeM bold">$3400.</p>
-                          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                          <h5 class="card-title">Silla gamer negro</h5>
+                          <p class="card-text typeM bold">$14000</p>
+                         <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#btncomprar">Agregar al carrito</button>
                       </div>
                     </div>
                 </div>
@@ -339,15 +354,15 @@
                     <div class="card">
                         <img src="../media/sillaornage.png" class="card-img-top" alt="Callofduty">
                       <div class="card-body">
-                          <h5 class="card-title">Call of Duty: Cold War</h5>
-                          <p class="card-text typeM bold">$3800.</p>
-                          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                          <h5 class="card-title">Silla gamer naranja</h5>
+                          <p class="card-text typeM bold">$15000</p>
+                          <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#btncomprar">Agregar al carrito</button>       
                       </div>
                     </div>
               </div>                          
         </div>
     </div>
-                                                  <!----------------paginas----------------!-->
+                                                   <!-- - - - - Paginas - - - - - -!-->
      <nav aria-label="Page navigation example ">
     <ul class="pagination justify-content-center">
       <li class="page-item">
@@ -365,20 +380,35 @@
       </li>
     </ul>
   </nav>  
-                   <!-----------------FOOTER-----------------  !-->
-     
+                    <!-- - - - - FOOTER - - - - - -!-->  
     <div class="container-formulario mt-2">
         <div class="row justify-content-start">
             <div class="col-lg-4">                               
               <form id="contacto">
-                <div class="form-group mt-4 ml-2"> 
+                <div class="form-group mt-3 ml-2"> 
                   <input type="email" class="form-control " aria-describedby="emailHelp"
                   placeholder="Escribe tu email">           
                 </div>
                 <div class="form-group ml-2">
                  <textarea placeholder="Tengo otra consulta"></textarea> 
-                </div>              
-                <button type="submit" class="btn btn-primary ml-2 rounded-0 mb-3">Enviar</button>
+                </div>
+                                      <!-- BOTON-MODAL -->
+              <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#btnenviar">
+                Enviar
+              </button>
+                                           <!-- Modal -->
+              <div class="modal fade" id="btnenviar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Gracias por tu consulta!</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>                           
               </form>
             </div>
             <div class="footer col-lg-4">
@@ -390,7 +420,7 @@
                         <li class="mt-3"><a href="reseñas.html">Reseñas</a></li>
                     </ul>  
             </div>
-                                    <!-----------------RRSS-----------------  !-->
+                                     <!-- - - - - RRSS - - - - - -!-->
 
             <div class="col-lg-4">
               <p class="mt-3">Nuestras redes</p>
